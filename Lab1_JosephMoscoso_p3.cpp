@@ -28,6 +28,7 @@ int main(){
       figura();
     }
     if(op2==2){
+      ejercicio2();
     }
     if(op2==3){
       ejercicio3();
@@ -42,7 +43,39 @@ int main(){
 }
 
 void ejercicio2(){
-  
+   cout<<"Bienvenido al ejercicio 2"<<endl;
+   cout<<endl<<"Ingrese un numero: ";
+   double num=0;
+   cin>>num;
+   int num2=num;
+   int c10=0;
+   int c100=1;
+   int c1000=1;
+   while(num>10){
+     num=num/10;
+     c10=c10+1;
+    // cout<<endl<<num;
+     if(num>10){
+       c100=c100*10;
+       c1000=c1000*10;
+     }
+     if(num<10){
+       c100=c100*1;
+       c1000=c1000*10;
+     }
+   }
+  // cout<<endl<<c100<<endl<<c1000;
+   int v2=num2;
+   v2=v2/c100;
+   v2=v2*c100;
+   double ver3=v2;
+   //cout<<endl<<ver3<<endl;
+   double logaritmo=ver3/c1000;
+  //cout<<endl<<logaritmo<<endl;
+   cout<<endl<<"log("<<num2<<")"<<"=";
+   for(int i=0;i<c10;i++){
+     cout<<"log("<<10<<")"<<"+";
+   } 
 }
 
 void ejercicio3(){
@@ -63,7 +96,7 @@ void ejercicio3(){
   while(result<y){
     cout<<"el valor de aproximacion de  "<<p<<" es: ";
     result=sqrt(p);
-   // result=result*m;
+    result=result*m;
     cout<<result<<endl;
     p=p+pOrigin;
   }
@@ -72,14 +105,14 @@ void ejercicio3(){
 }
 
 void figura(){
- /* cout<<"Bienvenido a la figura"<<endl;
+  cout<<"Bienvenido a la figura"<<endl;
   cout<<endl<<"Ingrese el valor n: ";
   int n=0;
   cin>>n;
   int fil=0;
   int col=0;
-  fil=2(n+1);
-  col=2(n)-1;
+  fil=2*n+2*1;
+  col=2*n-1;
   cout<<endl;
   cout<<"Figura Master Race";
   for(int i=0;i<fil/2;i++){
@@ -91,6 +124,5 @@ void figura(){
       cout<<"*";
     }
     cout<<endl;
-  }*/
-
+  }
 }
