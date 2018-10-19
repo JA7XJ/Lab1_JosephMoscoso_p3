@@ -4,6 +4,7 @@ using std::cout;
 using std::endl;
 
 #include<math.h>
+
 void figura();
 void ejercicio3();
 
@@ -53,14 +54,16 @@ void ejercicio3(){
   cin>>p;
   double pOrigin=p;
   double resultNew=0;
+  cout<<endl;
   while(result<y){
-    cout<<"el valor de aproximacion de  "<<p<<" es:";
+    cout<<"el valor de aproximacion de  "<<p<<" es: ";
     result=sqrt(p);
-    result=result*m;
+   // result=result*m;
     cout<<result<<endl;
     p=p+pOrigin;
   }
-  cout<<endl<<"El valor p final es="<<p;
+  p=p-pOrigin;
+  cout<<endl<<"El valor p final es= "<<p<<endl;
 }
 
 void figura(){
