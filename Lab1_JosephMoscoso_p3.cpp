@@ -6,6 +6,7 @@ using std::endl;
 #include<math.h>
 
 void figura();
+void ejercicio2();
 void ejercicio3();
 
 int main(){
@@ -38,6 +39,10 @@ int main(){
   cout<<endl;
   cout<<endl<<"Usted ha salido con exito"<<endl;
   return 0;	
+}
+
+void ejercicio2(){
+  
 }
 
 void ejercicio3(){
