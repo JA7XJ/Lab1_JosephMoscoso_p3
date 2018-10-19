@@ -75,7 +75,14 @@ void ejercicio2(){
    cout<<endl<<"log("<<num2<<")"<<"=";
    for(int i=0;i<c10;i++){
      cout<<"log("<<10<<")"<<"+";
-   } 
+   }
+   int conta=1;
+   while(logaritmo>1.3){
+     logaritmo=logaritmo/2;     
+     conta=conta+1;
+     cout<<"log("<<conta<<")+"<<logaritmo;
+   }
+   cout<<endl; 
 }
 
 void ejercicio3(){
